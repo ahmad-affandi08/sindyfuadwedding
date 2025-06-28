@@ -210,27 +210,22 @@
                     <img src="{{ asset('/images/decoration/bawah.png') }}" class="gsap-acara-ornament gsap-acara-bottom-center absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg z-30 pointer-events-none opacity-80">
                 </div>
 
-                <div class="gsap-acara-ornament gsap-acara-card relative z-20 bg-white/25 backdrop-blur-md p-6 sm:p-10 rounded-2xl shadow-xl max-w-2xl mx-auto">
-                    <p class="text-center max-w-md mx-auto text-stone-600 leading-relaxed">
+                <div class="gsap-acara-card relative z-20 bg-white/25 backdrop-blur-md p-6 sm:p-10 rounded-2xl shadow-xl max-w-2xl mx-auto text-center">
+                    <p class="max-w-md mx-auto text-stone-600 leading-relaxed">
                         Dengan segala kerendahan hati kami berharap kehadiran Bapak/Ibu/Saudara/i dalam acara pernikahan anak kami yang akan diselenggarakan pada:
                     </p>
                     <h3 class="font-script text-5xl sm:text-6xl text-amber-900 mt-8 mb-4">Akad Nikah</h3>
                     <img src="{{ asset('/images/ornaments/rings.png') }}" alt="Cincin Pernikahan" class="w-16 h-auto mx-auto drop-shadow-lg my-4">
 
                     <div class="flex flex-col items-center gap-2 my-6">
-
                         <div class="flex justify-center items-center gap-4 sm:gap-6 text-stone-700 font-semibold">
                             <p class="text-lg w-24 text-right">{{ \Carbon\Carbon::parse($tanggalAcara)->locale('id')->isoFormat('dddd') }}</p>
-
                             <div class="border-l-2 border-r-2 border-stone-300 px-4 sm:px-6">
                                 <p class="text-5xl font-sans font-bold text-amber-900">{{ \Carbon\Carbon::parse($tanggalAcara)->isoFormat('D') }}</p>
                             </div>
-
                             <p class="text-lg w-24 text-left">{{ \Carbon\Carbon::parse($tanggalAcara)->locale('id')->isoFormat('MMMM') }}</p>
                         </div>
-
                         <p class="text-2xl font-semibold text-stone-700">{{ \Carbon\Carbon::parse($tanggalAcara)->locale('id')->isoFormat('Y') }}</p>
-
                     </div>
                     <p class="text-xl font-bold text-amber-800">{{ $waktuAcara }}</p>
 
@@ -478,83 +473,73 @@
             </section>
 
             <section id="ucapan-terima-kasih" class="relative min-h-screen flex items-center justify-center py-24 px-4 overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img src="{{ asset('images/decoration/awankiri.png') }}" alt="Awan Kiri" class="gsap-cloud absolute top-[5%] left-0 w-1/2 md:w-1/3 opacity-40 -translate-x-1/4">
-                <img src="{{ asset('images/decoration/awankanan.png') }}" alt="Awan Kanan" class="gsap-cloud absolute top-[5%] right-0 w-1/2 md:w-1/3 opacity-40 translate-x-1/4">
+                <div class="absolute inset-0 z-0">
+                    <img src="{{ asset('images/decoration/awankiri.png') }}" alt="Awan Kiri" class="gsap-cloud absolute top-[5%] left-0 w-1/2 md:w-1/3 opacity-40 -translate-x-1/4">
+                    <img src="{{ asset('images/decoration/awankanan.png') }}" alt="Awan Kanan" class="gsap-cloud absolute top-[5%] right-0 w-1/2 md:w-1/3 opacity-40 translate-x-1/4">
+                    <img src="{{ asset('images/decoration/ataskiri.png') }}" alt="Hiasan Atas Kiri" class="gsap-top-ornament absolute top-0 left-0 w-[40%] md:w-[30%] opacity-80">
+                    <img src="{{ asset('images/decoration/ataskanan.png') }}" alt="Hiasan Atas Kanan" class="gsap-top-ornament absolute top-0 right-0 w-[40%] md:w-[30%] opacity-80">
+                    <img src="{{ asset('images/decoration/wayangkiri.png') }}" alt="Wayang Kiri" class="gsap-bottom-ornament absolute bottom-0 -left-10 md:left-0 w-2/3 md:w-[28%] max-w-[220px] md:max-w-xs">
+                    <img src="{{ asset('images/decoration/wayangkanan.png') }}" alt="Wayang Kanan" class="gsap-bottom-ornament absolute bottom-0 -right-10 md:right-0 w-2/3 md:w-[28%] max-w-[220px] md:max-w-xs">
+                </div>
 
-                <img src="{{ asset('images/decoration/ataskiri.png') }}" alt="Hiasan Atas Kiri" class="gsap-top-ornament absolute top-0 left-0 w-[40%] md:w-[30%] opacity-80">
-                <img src="{{ asset('images/decoration/ataskanan.png') }}" alt="Hiasan Atas Kanan" class="gsap-top-ornament absolute top-0 right-0 w-[40%] md:w-[30%] opacity-80">
+                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                    <img src="{{ asset('images/decoration/tengah.png') }}" alt="Hiasan Tengah" class="gsap-center-deco w-full max-w-lg opacity-30">
+                </div>
 
-                <img src="{{ asset('images/decoration/wayangkiri.png') }}" alt="Wayang Kiri" class="gsap-bottom-ornament absolute bottom-0 -left-10 md:left-0 w-2/3 md:w-[28%] max-w-[220px] md:max-w-xs">
-                <img src="{{ asset('images/decoration/wayangkanan.png') }}" alt="Wayang Kanan" class="gsap-bottom-ornament absolute bottom-0 -right-10 md:right-0 w-2/3 md:w-[28%] max-w-[220px] md:max-w-xs">
-            </div>
-
-            <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-                <img src="{{ asset('images/decoration/tengah.png') }}" alt="Hiasan Tengah" class="gsap-center-deco w-full max-w-lg opacity-30">
-            </div>
-
-            <div class="gsap-card-content relative w-full max-w-3xl bg-white/50 backdrop-blur-lg rounded-2xl shadow-xl p-4 text-center z-20 border border-white/20">
-
-                <p class="text-base text-stone-800 font-serif leading-relaxed">
-                    Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu kepada kedua mempelai.
-                </p>
-
-                <h3 class="font-serif-display text-3xl md:text-4xl text-amber-900 mt-8 mb-10">
-                    Wassalamu'alaikum Warahmatullahi Wabarakatuh
-                </h3>
-
-                <div class="flex flex-row justify-around items-start text-center mt-8">
-
-                    <div class="w-full ">
-                        <p class="text-sm text-stone-600 mb-1 underline">Keluarga</p>
-                        <h4 class="text-xs font-bold text-stone-800 font-serif leading-tight">
-                            {{$bapakWanita}}<br>{{$ibuWanita}}
-                        </h4>
+                <div class="gsap-card-content relative w-full max-w-3xl bg-white/50 backdrop-blur-lg rounded-2xl shadow-xl p-8 text-center z-20 border border-white/20">
+                    <p class="gsap-ucapan-content text-base text-stone-800 font-serif leading-relaxed">
+                        Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu kepada kedua mempelai.
+                    </p>
+                    <h3 class="gsap-ucapan-content font-serif-display text-3xl md:text-4xl text-amber-900 mt-8 mb-10">
+                        Wassalamu'alaikum Warahmatullahi Wabarakatuh
+                    </h3>
+                    <div class="gsap-ucapan-content flex flex-row justify-center items-start text-center space-x-8 mt-8">
+                        <div>
+                            <p class="text-sm text-stone-600 mb-1 underline">Keluarga</p>
+                            <h4 class="text-xs font-bold text-stone-800 font-serif leading-tight">
+                                {{$bapakWanita}}<br>{{$ibuWanita}}
+                            </h4>
+                        </div>
+                        <div>
+                            <p class="text-sm text-stone-600 mb-1 underline">Keluarga</p>
+                            <h4 class="text-xs font-bold text-stone-800 font-serif leading-tight">
+                                {{$bapakPria}}<br>{{$ibuPria}}
+                            </h4>
+                        </div>
                     </div>
-
-                    <div class="w-full ">
-                        <p class="text-sm text-stone-600 mb-1 underline">Keluarga</p>
-                        <h4 class="text-xs font-bold text-stone-800 font-serif leading-tight">
-                            {{$bapakPria}}<br>{{$ibuPria}}
-                        </h4>
+                    <div class="gsap-ucapan-content mt-12 pt-8 border-t border-white/40">
+                        <p class="text-sm font-serif text-stone-700/90">
+                            Music :
+                        </p>
+                        <p class="mt-1 text-xs text-stone-800 tracking-wider">
+                            Denny Caknan Feat Bella Bonita - Sinarengan
+                        </p>
                     </div>
                 </div>
-                 <div class="mt-12 pt-8 border-t border-white/40">
-                    <p class="text-sm font-serif text-stone-700/90">
-                        Music :
-                    </p>
-                    <p class="mt-1 text-xs  text-stone-800 tracking-wider">
-                        Denny Caknan Feat Bella Bonita - Sinarengan
-                    </p>
+
+                <div class="absolute inset-0 flex items-end justify-center z-30 pointer-events-none">
+                    <img src="{{ asset('images/decoration/bawah.png') }}" alt="Hiasan Bawah" class="gsap-bottom-ornament w-full max-w-md">
                 </div>
-            </div>
 
-            <div class="absolute inset-0 flex items-end justify-center z-30 pointer-events-none">
-                <img src="{{ asset('images/decoration/bawah.png') }}" alt="Hiasan Bawah" class="gsap-bottom-ornament w-full max-w-md">
-            </div>
-
-            <div class="fixed bottom-6 right-6 flex flex-col space-y-3 z-50">
-
-                <button id="music-toggle-btn" aria-label="Putar musik" class="gsap-buttons w-12 h-12 flex items-center justify-center bg-stone-800/70 hover:bg-amber-900 transition-colors duration-300 text-white rounded-full shadow-lg">
-                    <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
-                    </svg>
-                    <svg id="mute-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
-                    </svg>
-                </button>
-
-                <a href="https://wa.me/6282272983859?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20undangan%20Anda."
-                target="_blank" rel="noopener noreferrer"
-                aria-label="Hubungi via WhatsApp"
-                class="gsap-buttons w-12 h-12 flex items-center justify-center bg-green-600/80 hover:bg-green-700 transition-colors duration-300 text-white rounded-full shadow-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.457l-6.354 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.435-9.884-9.888-9.884-5.448 0-9.886 4.434-9.889 9.884-.001 2.225.651 4.288 1.91 5.961l-1.516 5.522zm7.54-6.234c-.197-.1-1.162-.574-1.342-.639-.18-.065-.312-.099-.445.099-.133.197-.507.639-.623.765-.116.125-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.117-.197-.015-.304.088-.403.09-.088.197-.232.296-.346.1-.116.133-.197.198-.33.065-.133.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.116-.003-.248-.003-.38-.003s-.346.049-.52.248c-.172.196-.656.637-.656 1.559s.672 1.815.767 1.941c.095.126 1.372 2.098 3.33 2.915.47.197.84.312 1.12.398.28.088.54.076.72.023.197-.053.578-.232.66-.46.08-.227.08-.42.05-.46-.03-.04-.16-.09-.34-.19"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
+                <div class="fixed bottom-6 right-6 flex flex-col space-y-3 z-50">
+                    <button id="music-toggle-btn" aria-label="Putar musik" class="w-12 h-12 flex items-center justify-center bg-amber-900/70 hover:bg-amber-900 transition-colors duration-300 text-white rounded-full shadow-lg">
+                        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                        </svg>
+                        <svg id="mute-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                        </svg>
+                    </button>
+                    <a href="https://wa.me/6282272983859?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20undangan%20Anda."
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="Hubungi via WhatsApp"
+                    class=" w-12 h-12 flex items-center justify-center bg-green-600/80 hover:bg-green-700 transition-colors duration-300 text-white rounded-full shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.457l-6.354 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.435-9.884-9.888-9.884-5.448 0-9.886 4.434-9.889 9.884-.001 2.225.651 4.288 1.91 5.961l-1.516 5.522zm7.54-6.234c-.197-.1-1.162-.574-1.342-.639-.18-.065-.312-.099-.445.099-.133.197-.507.639-.623.765-.116.125-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.117-.197-.015-.304.088-.403.09-.088.197-.232.296-.346.1-.116.133-.197.198-.33.065-.133.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.116-.003-.248-.003-.38-.003s-.346.049-.52.248c-.172.196-.656.637-.656 1.559s.672 1.815.767 1.941c.095.126 1.372 2.098 3.33 2.915.47.197.84.312 1.12.398.28.088.54.076.72.023.197-.053.578-.232.66-.46.08-.227.08-.42.05-.46-.03-.04-.16-.09-.34-.19"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
         <footer class="bg-amber-900 py-12">
             <div class="max-w-7xl mx-auto px-4 text-center">
 
@@ -613,6 +598,7 @@
                         initAyatSuciV2Animation();
                         initFinalGiftAnimation();
                         initFinalSection();
+                        initTerimaKasihAnimation();
                     }, 1000);
 
                     const profileTl = gsap.timeline();
@@ -634,9 +620,6 @@
             }
 
             function initAcaraAnimation() {
-                // =================================================================
-                // LANGKAH 1: Set Kondisi Awal (Sembunyikan Semua Elemen)
-                // =================================================================
                 gsap.set([".gsap-acara-ornament", ".gsap-acara-card"], { autoAlpha: 0 });
                 gsap.set(".gsap-acara-wayang-kiri", { xPercent: -100 });
                 gsap.set(".gsap-acara-wayang-kanan", { xPercent: 100 });
@@ -648,9 +631,6 @@
                 gsap.set(".gsap-acara-awan-kanan", { x: 50 });
                 gsap.set(".gsap-acara-card", { scale: 0.8, y: 50 });
 
-                // =================================================================
-                // LANGKAH 2: Buat Animasi Individual Untuk Setiap Elemen
-                // =================================================================
                 const defaultScrollTrigger = {
                     trigger: null,
                     start: "top 85%",
@@ -821,6 +801,59 @@
                 });
 
                 updateButtonState();
+            }
+
+            function initTerimaKasihAnimation() {
+                gsap.set([
+                    ".gsap-cloud", ".gsap-top-ornament", ".gsap-bottom-ornament",
+                    ".gsap-center-deco", ".gsap-card-content", ".gsap-buttons"
+                ], { autoAlpha: 0 });
+
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: "#ucapan-terima-kasih",
+                        start: "top 65%",
+                        once: true,
+                    }
+                });
+
+                const decorations = [
+                    ".gsap-cloud",
+                    ".gsap-top-ornament",
+                    ".gsap-bottom-ornament",
+                ];
+
+                tl.from(decorations, {
+                    y: (index) => (index === 0 ? -30 : (index === 1 ? -30 : 30)),
+                    scale: 0.9,
+                    duration: 1.5,
+                    ease: "power3.out",
+                    stagger: 0.15
+                }, 0);
+
+                tl.to(decorations, { autoAlpha: 1, duration: 1.5, stagger: 0.15 }, 0);
+
+                tl.to(".gsap-center-deco", {
+                    autoAlpha: 0.3,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "power3.out"
+                }, "-=1.2");
+
+                tl.to(".gsap-card-content", {
+                    autoAlpha: 1,
+                    duration: 0.5,
+                    ease: "power2.inOut"
+                }, "-=0.8");
+
+                tl.from(".gsap-ucapan-content", {
+                    autoAlpha: 0,
+                    y: 25,
+                    duration: 0.8,
+                    ease: "power2.out",
+                    stagger: 0.1
+                }, "-=0.5");
+
             }
 
             // =======================================================
