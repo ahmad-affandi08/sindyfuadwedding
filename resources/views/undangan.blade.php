@@ -44,7 +44,7 @@
             'bank' => 'Mandiri',
             'logo' => asset('/images/logos/mandiri.png'),
             'nomor' => '1380022296474',
-            'nama' => 'Sindi Ni\'am Muakki'
+            'nama' => 'Sindi Ni\'am Muzakki'
         ],
         [
             'bank' => 'BRI',
@@ -320,11 +320,8 @@
                 </div>
             </section>
 
-            <section id="hadiah-terakhir" class="relative bg-orange-50 py-19 px-4 overflow-hidden">
+            <section id="hadiah-terakhir" class="relative bg-orange-50 pb-20 px-4 overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <img src="{{ asset('images/decoration/ataskiri.png') }}" class="gsap-final-ornament absolute top-0 left-0 w-[35%]">
-                    <img src="{{ asset('images/decoration/ataskanan.png') }}" class="gsap-final-ornament absolute top-0 right-0 w-[35%]">
-
                     <img src="{{ asset('images/decoration/awankiri.png') }}" class="gsap-hadiah-akhir-ornament absolute top-0 -left-1/4 w-2/3 opacity-30">
                     <img src="{{ asset('images/decoration/awankanan.png') }}" class="gsap-hadiah-akhir-ornament absolute bottom-0 -right-1/4 w-2/3 opacity-30">
                     <img src="{{ asset('/images/decoration/bawah.png') }}" class="gsap-hadiah-akhir-ornament  absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg z-30 pointer-events-none">
