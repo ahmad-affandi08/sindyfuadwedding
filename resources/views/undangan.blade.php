@@ -182,8 +182,8 @@
 
             <section id="ayat-suci-v2" class="relative bg-stone-800 text-white py-24 px-4 overflow-hidden">
                 <div class="absolute inset-0 z-0 opacity-40">
-                    <img src="{{ asset('images/decoration/ataskiri.png') }}" class="gsap-ayat-v2-corner absolute top-0 left-0 w-1/2 md:w-1/3">
-                    <img src="{{ asset('images/decoration/ataskanan.png') }}" class="gsap-ayat-v2-corner absolute top-0 right-0 w-1/2 md:w-1/3">
+                    <img src="{{ asset('images/decoration/ataskiri.png') }}" class="gsap-ayat-v2-corner absolute top-0 left-0 w-[45%]">
+                    <img src="{{ asset('images/decoration/ataskanan.png') }}" class="gsap-ayat-v2-corner absolute top-0 right-0 w-[45%]">
                     <img src="{{ asset('images/decoration/awankiri.png') }}" class="gsap-ayat-v2-awan absolute top-1/4 -left-10 w-1/3 md:w-1/4">
                     <img src="{{ asset('images/decoration/awankanan.png') }}" class="gsap-ayat-v2-awan absolute top-1/3 -right-10 w-1/3 md:w-1/4">
                 </div>
@@ -205,8 +205,8 @@
 
             <section id="acara" class="relative min-h-screen text-center bg-orange-50 py-20 px-4 sm:px-6 overflow-hidden">
                 <div class="absolute inset-0 w-full h-full">
-                    <img src="{{ asset('/images/decoration/ataskiri.png') }}" class="gsap-acara-ornament gsap-acara-corner-tl absolute top-0 left-0 w-[35%] z-10 pointer-events-none">
-                    <img src="{{ asset('/images/decoration/ataskanan.png') }}" class="gsap-acara-ornament gsap-acara-corner-tr absolute top-0 right-0 w-[35%] z-10 pointer-events-none">
+                    <img src="{{ asset('/images/decoration/ataskiri.png') }}" class="gsap-acara-ornament gsap-acara-corner-tl absolute top-0 left-0 w-[45%] z-10 pointer-events-none">
+                    <img src="{{ asset('/images/decoration/ataskanan.png') }}" class="gsap-acara-ornament gsap-acara-corner-tr absolute top-0 right-0 w-[45%] z-10 pointer-events-none">
                     <img src="{{ asset('/images/decoration/tengah.png') }}" class="gsap-acara-ornament gsap-acara-top-center absolute top-20  w-[30%] z-30 pointer-events-none">
                     <img src="{{ asset('/images/decoration/awankiri.png') }}" class="gsap-acara-ornament gsap-acara-awan-kiri absolute top-[15%] left-[-5%] w-[30%] sm:w-[20%] z-10 pointer-events-none opacity-60">
                     <img src="{{ asset('/images/decoration/awankanan.png') }}" class="gsap-acara-ornament gsap-acara-awan-kanan absolute top-[15%] right-[-5%] w-[30%] sm:w-[20%] z-10 pointer-events-none opacity-60">
@@ -423,8 +423,8 @@
             <section id="final-section" class="relative bg-orange-50 py-24 px-4 sm:px-8 overflow-hidden">
                 <!-- Background Images -->
                 <div class="absolute inset-0 z-0 pointer-events-none">
-                    <img src="{{ asset('images/decoration/ataskiri.png') }}" class="gsap-final-ornament absolute top-0 left-0 w-[35%]">
-                    <img src="{{ asset('images/decoration/ataskanan.png') }}" class="gsap-final-ornament absolute top-0 right-0 w-[35%]">
+                    <img src="{{ asset('images/decoration/ataskiri.png') }}" class="gsap-final-ornament absolute top-0 left-0 w-[45%]">
+                    <img src="{{ asset('images/decoration/ataskanan.png') }}" class="gsap-final-ornament absolute top-0 right-0 w-[45%]">
                     <img src="{{ asset('images/decoration/wayangkiri.png') }}" class="gsap-final-wayang absolute bottom-0 left-0 w-1/2 sm:w-1/3 md:w-[26%] max-w-[120px] md:max-w-xs">
                     <img src="{{ asset('images/decoration/wayangkanan.png') }}" class="gsap-final-wayang absolute bottom-0 right-0 w-1/2 sm:w-1/3 md:w-[26%] max-w-[120px] md:max-w-xs">
                     <img src="{{ asset('images/decoration/bawah.png') }}" class="gsap-final-wayang absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md md:max-w-lg z-20">
@@ -509,8 +509,8 @@
                 <div class="absolute inset-0 z-0">
                     <img src="{{ asset('images/decoration/awankiri.png') }}" alt="Awan Kiri" class="gsap-cloud absolute top-[5%] left-0 w-1/2 md:w-1/3 opacity-40 -translate-x-1/4">
                     <img src="{{ asset('images/decoration/awankanan.png') }}" alt="Awan Kanan" class="gsap-cloud absolute top-[5%] right-0 w-1/2 md:w-1/3 opacity-40 translate-x-1/4">
-                    <img src="{{ asset('images/decoration/ataskiri.png') }}" alt="Hiasan Atas Kiri" class="gsap-top-ornament absolute top-0 left-0 w-[40%] md:w-[30%] opacity-80">
-                    <img src="{{ asset('images/decoration/ataskanan.png') }}" alt="Hiasan Atas Kanan" class="gsap-top-ornament absolute top-0 right-0 w-[40%] md:w-[30%] opacity-80">
+                    <img src="{{ asset('images/decoration/ataskiri.png') }}" alt="Hiasan Atas Kiri" class="gsap-top-ornament absolute top-0 left-0 w-[45%] ">
+                    <img src="{{ asset('images/decoration/ataskanan.png') }}" alt="Hiasan Atas Kanan" class="gsap-top-ornament absolute top-0 right-0 w-[45%] ">
                     <img src="{{ asset('images/decoration/wayangkiri.png') }}"alt="Wayang Kiri"class="gsap-bottom-ornament z-30 absolute bottom-0 -left-15 w-1/2 sm:w-1/3 md:w-[28%] max-w-[140px] sm:max-w-[180px] md:max-w-xs object-contain">
                     <img src="{{ asset('images/decoration/wayangkanan.png') }}"alt="Wayang Kanan"class="gsap-bottom-ornament z-30 absolute bottom-0 -right-15 w-1/2 sm:w-1/3 md:w-[28%] max-w-[140px] sm:max-w-[180px] md:max-w-xs object-contain">                </div>
 
