@@ -200,8 +200,8 @@
             <div class="absolute inset-0 w-full h-full pointer-events-none">
                 <img src="{{ asset('/images/decoration/awankiri.png') }}" class="animate-on-scroll absolute top-[10%] left-[-5%] w-[40%] opacity-80 z-10" data-animation="fadeInLeft" data-delay="300">
                 <img src="{{ asset('/images/decoration/awankanan.png') }}" class="animate-on-scroll absolute top-[15%] right-[-5%] w-[40%] opacity-80 z-10" data-animation="fadeInRight" data-delay="300">
-                <img src="{{ asset('/images/decoration/wayangkiri.png') }}" class="animate-on-scroll absolute bottom-0 -left-15 w-[35%] sm:w-[30%] z-20" data-animation="fadeInUp" data-delay="500">
-                <img src="{{ asset('/images/decoration/wayangkanan.png') }}" class="animate-on-scroll absolute bottom-0 -right-15 w-[35%] sm:w-[30%] z-20" data-animation="fadeInUp" data-delay="500">
+                <img src="{{ asset('/images/decoration/wayangkiri.png') }}" class="animate-on-scroll absolute bottom-0 -left-15 w-[35%] sm:w-[30%] z-30" data-animation="fadeInUp" data-delay="500">
+                <img src="{{ asset('/images/decoration/wayangkanan.png') }}" class="animate-on-scroll absolute bottom-0 -right-15 w-[35%] sm:w-[30%] z-30" data-animation="fadeInUp" data-delay="500">
                 <img src="{{ asset('/images/decoration/ataskiri.png') }}" class="animate-on-scroll absolute top-0 left-0 w-[45%] z-30" data-animation="fadeInDown">
                 <img src="{{ asset('/images/decoration/ataskanan.png') }}" class="animate-on-scroll absolute top-0 right-0 w-[45%] z-30" data-animation="fadeInDown">
                 <img src="{{ asset('/images/decoration/bawah.png') }}" class="animate-on-scroll absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md z-30" data-animation="fadeInUp">
@@ -299,7 +299,7 @@
         </section>
 
         <section id="lokasi" class="relative bg-stone-800 text-white py-24 px-4 overflow-hidden">
-            <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute inset-0 z-30 pointer-events-none">
                 <img src="{{ asset('images/decoration/ataskiri.png') }}" class="animate-on-scroll absolute top-0 left-0 w-1/3 max-w-xs opacity-70" data-animation="fadeInDown">
                 <img src="{{ asset('images/decoration/ataskanan.png') }}" class="animate-on-scroll absolute top-0 right-0 w-1/3 max-w-xs opacity-70" data-animation="fadeInDown">
                 <img src="{{ asset('images/decoration/tengah.png') }}" class="animate-on-scroll absolute top-10 left-1/2 -translate-x-1/2 w-1/4 max-w-[150px] opacity-40" data-animation="zoomIn">
@@ -563,7 +563,7 @@
         </section>
 
         <section id="ucapan-terima-kasih" class="relative min-h-screen flex items-center justify-center py-24 px-4 overflow-hidden bg-orange-50">
-            <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute inset-0 z-30 pointer-events-none">
                 <img src="{{ asset('images/decoration/awankiri.png') }}" alt="Awan Kiri" class="animate-on-scroll absolute top-[5%] left-0 w-1/2 md:w-1/3 opacity-40 -translate-x-1/4" data-animation="fadeInLeft">
                 <img src="{{ asset('images/decoration/awankanan.png') }}" alt="Awan Kanan" class="animate-on-scroll absolute top-[5%] right-0 w-1/2 md:w-1/3 opacity-40 translate-x-1/4" data-animation="fadeInRight">
                 <img src="{{ asset('images/decoration/ataskiri.png') }}" alt="Hiasan Atas Kiri" class="animate-on-scroll absolute top-0 left-0 w-[45%]" data-animation="fadeInDown">
