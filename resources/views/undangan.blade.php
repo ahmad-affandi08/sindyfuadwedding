@@ -398,86 +398,88 @@
             </div>
         </section>
 
-        <section id="hadiah-terakhir" class="relative bg-orange-50 pb-20 px-4 overflow-hidden">
-            <div class="absolute inset-0 z-0 pointer-events-none">
-                <img src="{{ asset('images/decoration/awankiri.png') }}" class="animate-on-scroll absolute top-0 -left-1/4 w-2/3 opacity-30" data-animation="fadeInLeft">
-                <img src="{{ asset('images/decoration/awankanan.png') }}" class="animate-on-scroll absolute bottom-0 -right-1/4 w-2/3 opacity-30" data-animation="fadeInRight">
-                <img src="{{ asset('/images/decoration/bawah.png') }}" class="animate-on-scroll absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg z-30" data-animation="fadeInUp" data-delay="200">
-            </div>
+        <section id="hadiah-terakhir" class="relative bg-orange-50 py-24 px-4 overflow-hidden">
+    <div class="absolute inset-0 z-0 pointer-events-none">
+        <img src="{{ asset('images/decoration/awankiri.png') }}" class="animate-on-scroll absolute top-0 -left-1/4 w-2/3 opacity-30" data-animation="fadeInLeft">
+        <img src="{{ asset('images/decoration/awankanan.png') }}" class="animate-on-scroll absolute bottom-0 -right-1/4 w-2/3 opacity-30" data-animation="fadeInRight">
+        <img src="{{ asset('/images/decoration/bawah.png') }}" class="animate-on-scroll absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-lg z-30" data-animation="fadeInUp" data-delay="200">
+    </div>
 
-            <div class="relative z-10 text-center max-w-4xl mx-auto">
-                <h2 class="animate-on-scroll font-serif-display text-5xl text-amber-900" style="text-shadow: 1px 1px 3px rgba(120, 53, 15, 0.2);" data-animation="fadeInUp">
-                    Tanda Kasih
-                </h2>
-                <p class="animate-on-scroll mt-4 max-w-xl mx-auto text-stone-600" data-animation="fadeInUp" data-delay="200">
-                    Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih, Anda dapat melakukannya melalui tautan berikut.
-                </p>
+    <div class="relative z-10 text-center max-w-4xl mx-auto">
+        <h2 class="animate-on-scroll font-serif-display text-5xl text-amber-900" style="text-shadow: 1px 1px 3px rgba(120, 53, 15, 0.2);" data-animation="fadeInUp">
+            Tanda Kasih
+        </h2>
+        <p class="animate-on-scroll mt-4 max-w-xl mx-auto text-stone-600" data-animation="fadeInUp" data-delay="200">
+            Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih, Anda dapat melakukannya melalui pilihan di bawah ini.
+        </p>
 
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    @foreach ($rekeningBank as $index => $rekening)
-                        <div class="animate-on-scroll w-full max-w-md mx-auto" data-animation="fadeInUp" data-delay="{{ $index * 200 }}">
-                            <div class="relative transform transition duration-500 hover:scale-[1.015] hover:-translate-y-1">
-                                <div class="relative w-full aspect-video bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between ring-1 ring-stone-200 text-gray-800">
-                                    <div class="flex justify-between items-start">
-                                        <img src="{{ asset('images/logos/pin.png') }}" alt="Pin" class=" w-14 h-14">
-                                        <img src="{{ $rekening['logo'] }}" alt="Logo {{ $rekening['bank'] }}" class="h-16 object-contain drop-shadow-sm">
-                                    </div>
-                                    <div class="mt-4">
-                                        <p class="text-2xl lg:text-3xl tracking-widest font-mono text-slate-900 whitespace-nowrap overflow-x-auto" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
-                                            {{ trim(chunk_split($rekening['nomor'], 4, ' ')) }}
-                                        </p>
-                                    </div>
-                                    <div class="mt-3 flex justify-between items-center">
-                                        <p class="text-lg font-semibold uppercase tracking-wide text-slate-800">{{ $rekening['nama'] }}</p>
-                                        <svg class="w-8 h-8 text-amber-900/80" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="2.5" stroke="currentColor" fill="none">
-                                            <path d="M25.46,32a6.49,6.49,0,0,1,6.49-6.49" />
-                                            <path d="M25.46,32a12.3,12.3,0,0,1,12.3-12.3" />
-                                            <path d="M25.46,32a18.12,18.12,0,0,1,18.12-18.12" />
-                                        </svg>
-                                    </div>
-                                    <button data-rekening-nomor="{{ $rekening['nomor'] }}" class="salin-btn-rekening mt-5 w-full bg-amber-700 hover:bg-amber-800 text-white font-semibold py-2.5 rounded-xl shadow-md transition hover:shadow-lg text-sm tracking-wide">
-                                        Salin Nomor
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
+        <div class="mt-12 flex flex-col items-center gap-8">
 
-                     <div class="animate-on-scroll w-full max-w-md mx-auto" data-animation="fadeInUp" data-delay="{{ count($rekeningBank) * 200 }}">
-                        <div class="relative bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
-                            <div class="p-8 pb-0 text-center">
-                                <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-amber-100 shadow-inner">
-                                    <svg class="h-8 w-8 text-amber-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H7.5a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A3.375 3.375 0 006.375 8.25v2.25H17.625v-2.25A3.375 3.375 0 0012 4.875z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18.75h12M6 15h12" />
-                                    </svg>
-                                </div>
-                                <h3 class="mt-6 text-2xl font-serif-display text-amber-900 tracking-wide">
-                                    Kirim Hadiah
-                                </h3>
+            @foreach ($rekeningBank as $index => $rekening)
+                <div class="animate-on-scroll w-full max-w-md mx-auto" data-animation="fadeInUp" data-delay="{{ $index * 150 }}">
+                    <div class="relative transform transition duration-500 hover:scale-[1.015] hover:-translate-y-1">
+                        <div class="relative w-full aspect-video bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between ring-1 ring-stone-200 text-gray-800">
+                            <div class="flex justify-between items-start">
+                                <img src="{{ asset('images/logos/pin.png') }}" alt="Pin" class="w-14 h-14">
+                                <img src="{{ $rekening['logo'] }}" alt="Logo {{ $rekening['bank'] }}" class="h-16 object-contain drop-shadow-sm">
                             </div>
-                            <div class="p-8 text-center space-y-4">
-                                <div class="text-stone-700">
-                                    <p class="text-sm">Untuk:</p>
-                                    <p class="mt-1 text-lg font-semibold text-stone-900">{{ $namaLengkapWanita }}</p>
-                                </div>
-                                <div class="text-sm text-stone-600 bg-white/80 border border-stone-200 rounded-lg p-4 leading-relaxed">
-                                    {{ $alamatLokasi }}
-                                </div>
+                            <div class="mt-4">
+                                <p class="text-2xl lg:text-3xl tracking-widest font-mono text-slate-900 whitespace-nowrap overflow-x-auto" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+                                    {{ trim(chunk_split($rekening['nomor'], 4, ' ')) }}
+                                </p>
                             </div>
-                            <div class="bg-white/60 px-6 py-4 border-t border-stone-200">
-                                <button data-alamat="{{ $alamatLokasi }}" class="salin-btn-alamat group flex w-full items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-amber-900/40">
-                                    <svg class="h-5 w-5 opacity-80 transition-transform duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.353-.026.692-.026 1.038 0 .346.026.685.026 1.038 0 1.13.094 1.976 1.057 1.976 2.192V7.5M8.25 7.5h7.5M8.25 7.5V9a.75.75 0 00.75.75h6a.75.75 0 00.75-.75V7.5m-9 7.5h9A1.5 1.5 0 0018 13.5V9a1.5 1.5 0 00-1.5-1.5h-9A1.5 1.5 0 006 9v4.5A1.5 1.5 0 007.5 15z" />
-                                    </svg>
-                                    <span>Salin Alamat</span>
-                                </button>
+                            <div class="mt-3 flex justify-between items-center">
+                                <p class="text-lg font-semibold uppercase tracking-wide text-slate-800">{{ $rekening['nama'] }}</p>
+                                <svg class="w-8 h-8 text-amber-900/80" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="2.5" stroke="currentColor" fill="none">
+                                    <path d="M25.46,32a6.49,6.49,0,0,1,6.49-6.49" />
+                                    <path d="M25.46,32a12.3,12.3,0,0,1,12.3-12.3" />
+                                    <path d="M25.46,32a18.12,18.12,0,0,1,18.12-18.12" />
+                                </svg>
                             </div>
+                            <button data-rekening-nomor="{{ $rekening['nomor'] }}" class="salin-btn-rekening mt-5 w-full bg-amber-700 hover:bg-amber-800 text-white font-semibold py-2.5 rounded-xl shadow-md transition hover:shadow-lg text-sm tracking-wide">
+                                Salin Nomor
+                            </button>
                         </div>
                     </div>
                 </div>
+            @endforeach
+
+            <div class="animate-on-scroll w-full max-w-md mx-auto" data-animation="fadeInUp" data-delay="{{ count($rekeningBank) * 150 }}">
+                <div class="relative bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+                    <div class="p-8 pb-0 text-center">
+                        <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-amber-100 shadow-inner">
+                            <svg class="h-8 w-8 text-amber-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H7.5a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A3.375 3.375 0 006.375 8.25v2.25H17.625v-2.25A3.375 3.375 0 0012 4.875z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18.75h12M6 15h12" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-2xl font-serif-display text-amber-900 tracking-wide">
+                            Kirim Hadiah Fisik
+                        </h3>
+                    </div>
+                    <div class="p-8 text-center space-y-4">
+                        <div class="text-stone-700">
+                            <p class="text-sm">Untuk:</p>
+                            <p class="mt-1 text-lg font-semibold text-stone-900">{{ $namaLengkapWanita }}</p>
+                        </div>
+                        <div class="text-sm text-stone-600 bg-white/80 border border-stone-200 rounded-lg p-4 leading-relaxed">
+                            {{ $alamatLokasi }}
+                        </div>
+                    </div>
+                    <div class="bg-white/60 px-6 py-4 border-t border-stone-200">
+                        <button data-alamat="{{ $alamatLokasi }}" class="salin-btn-alamat group flex w-full items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-amber-900/40">
+                            <svg class="h-5 w-5 opacity-80 transition-transform duration-300 group-hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.353-.026.692-.026 1.038 0 .346.026.685.026 1.038 0 1.13.094 1.976 1.057 1.976 2.192V7.5M8.25 7.5h7.5M8.25 7.5V9a.75.75 0 00.75.75h6a.75.75 0 00.75-.75V7.5m-9 7.5h9A1.5 1.5 0 0018 13.5V9a1.5 1.5 0 00-1.5-1.5h-9A1.5 1.5 0 006 9v4.5A1.5 1.5 0 007.5 15z" />
+                            </svg>
+                            <span>Salin Alamat</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </section>
+
+        </div>
+    </div>
+</section>
 
         <section id="final-section" class="relative bg-orange-50 py-24 px-4 sm:px-8 overflow-hidden">
             <div class="absolute inset-0 z-0 pointer-events-none">
