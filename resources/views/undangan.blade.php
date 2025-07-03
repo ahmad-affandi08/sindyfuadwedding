@@ -656,7 +656,7 @@
 
     </div>
 </div>
-    <<script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             // =======================================================
             // SKRIP UNTUK DEBUGGING - TANPA ANIMASI TRANSISI
